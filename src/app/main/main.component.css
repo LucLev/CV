@@ -1,2 +1,64 @@
-
+button {
+    z-index: 1;
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    padding: 0.5em 1em;
+    outline: none;
+    border: none;
+  }
   
+  button:hover {
+    cursor: pointer;
+    animation: jelly 0.5s;
+  }
+  
+  @keyframes jelly {
+    0%,
+    100% {
+      transform: scale(1, 1);
+    }
+    25% {
+      transform: scale(0.9, 1.1);
+    }
+    50% {
+      transform: scale(1.1, 0.9);
+    }
+    75% {
+      transform: scale(0.95, 1.05);
+    }
+  }
+
+  .center{
+    margin-top: 2vh;
+}
+.header-image {
+    background-image: url('https://angular.io/assets/images/logos/angular/logo-nav@2x.png');
+    background-size: cover;
+}
+.header-image2 {
+    background-image: url('../../assets/JavaCard.jpg');
+    background-size: cover;
+}
+.header-image3 {
+    background-image: url('../../assets/MySqlLogo.jpg');
+    background-size: cover;
+}
+
+.skill{
+    margin-top: 2vh;
+    height:100%;
+}
+.skills{
+    height:70vh;
+}
+mat-card-content{
+    margin-top: 10vh;
+}
+.card{
+    height: 100%;
+}
+.cardtxt{
+    margin-top: 2vw;
+}
+

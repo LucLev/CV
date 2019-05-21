@@ -1,6 +1,67 @@
-<div class="row">
-  <div class="card col-2">
-    <img class="col-12" src="../../assets/angular.svg.png" alt="Angular logo">
+<div class="offset-1 col-10 skills">
+  <div *ngIf="skillStatus==1" class="skill" [@animationOption2]="skillStatus ? 'open': 'close'">
+      <mat-card class="col-12 card">
+          <mat-card-header>
+            <div mat-card-avatar class="header-image"></div>
+            <mat-card-title>Angular</mat-card-title>
+            <mat-card-subtitle>Framework de developement WEB/Front</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content>
+            <div class="row">
+              <div class="col-2 offset-2" matTooltip="HTML 5" matTooltipPosition="above">
+                  <img class="col-12" src="../../assets/HTML5.svg.png" alt="html5 logo">
+              </div>
+              <div class="col-2 offset-1" matTooltip="CSS 3" matTooltipPosition="above">
+                  <img class="col-12" src="../../assets/CSS3.svg.png" alt="css3 logo">
+              </div>
+              <div class="col-2 offset-1" matTooltip="TypeScript" matTooltipPosition="above">
+                  <img class="col-12" src="../../assets/ts.png" alt="typescript logo">
+              </div>
+            </div>
+            <p class="cardtxt offset-1">
+              Creations de pages Web dinamiques adaptés à tous les formats d'ecrans.
+            </p>
+          </mat-card-content>
+        </mat-card>
+</div>
+<div *ngIf="skillStatus==2" class="skill" [@animationOption2]="skillStatus ? 'open': 'close'">
+    <mat-card class="col-12 card">
+        <mat-card-header>
+          <div mat-card-avatar class="header-image2"></div>
+          <mat-card-title>Java</mat-card-title>
+          <mat-card-subtitle>Language polyvalant</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+
+        </mat-card-content>
+      </mat-card>
+</div>
+<div *ngIf="skillStatus==3" class="skill" [@animationOption2]="skillStatus ? 'open': 'close'">
+    <mat-card class="col-12 card">
+        <mat-card-header>
+          <div mat-card-avatar class="header-image3"></div>
+          <mat-card-title>MySQL</mat-card-title>
+          <mat-card-subtitle>Système de Gestion de Bases de Données Relationelles</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+        </mat-card-content>
+      </mat-card>
+</div>
+<div class="row center">
+  <div class="col-2 offset-2">
+    <button mat-raised-button (click)="displaySkill(1)">
+      <img class="col-12" src="../../assets/angular.svg.png" alt="Angular logo">
+    </button>
+  </div>
+  <div class="col-2 offset-1" (click)="displaySkill(2)">
+    <button mat-raised-button>
+      <img class="col-12" src="../../assets/Java_Logo.svg.png" alt="java logo">
+    </button>
+  </div>
+  <div class="col-2 offset-1" (click)="displaySkill(3)">
+    <button mat-raised-button >
+      <img class="col-12" src="../../assets/MySQL.svg.png" alt="mySQL logo">
+    </button>
   </div>
 </div>
 
