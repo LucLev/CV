@@ -6,7 +6,7 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.css'],
   animations: [
-    trigger('animationOption2', [      
+    trigger('animation1', [      
       transition(':enter', [
         style({ opacity: 0 }),
         animate(300)

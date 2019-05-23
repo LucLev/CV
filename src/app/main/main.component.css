@@ -61,4 +61,8 @@ mat-card-content{
 .cardtxt{
     margin-top: 2vw;
 }
+.vertical{
+  align-items: center;
+  height:75vh;
+}
 
