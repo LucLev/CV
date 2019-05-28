@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule, MatCheckboxModule, MatToolbarModule, MatSidenavModule, MatIconModule, MatListModule, MatCardModule, MatTooltipModule} from '@angular/material';
+import {MatButtonModule, MatCheckboxModule, MatExpansionModule,  MatToolbarModule, MatSidenavModule, MatIconModule, MatListModule, MatCardModule, MatTooltipModule} from '@angular/material';
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 
@@ -48,6 +48,7 @@ const routes: Routes = [
     MatIconModule,
     MatListModule,
     MatCardModule,
+    MatExpansionModule,
     MatTooltipModule,
     RouterModule.forRoot(routes),
   ],
